@@ -51,8 +51,13 @@ button {
 }
 .defaultTilte2 {
   color: #131318;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
+}
+.menuBar {
+  display: none;
+  height: 24px;
+  width: 24px;
 }
 /* HEADER CSS */
 nav {
@@ -92,7 +97,7 @@ nav {
   color: #ff5400;
 }
 .headerBanner {
-  height: 500px;
+  height: auto;
   width: 1170px;
   border-radius: 16px;
   position: relative;
@@ -130,8 +135,10 @@ nav {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  margin-top: 24px;
-  margin-bottom: 48px;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  width: 800px;
+  margin: 0 auto;
 }
 .headerForm {
   display: grid;
@@ -190,7 +197,9 @@ select,
 }
 .popularContent ul li {
   margin: 16px 0;
+  
 }
+
 .popularImg {
   width: 540px;
   height: 550px;
@@ -206,8 +215,8 @@ select,
   text-align: center;
 }
 .destinationContent p {
-  margin-top: 24px;
-  margin-bottom: 48px;
+  width: 680px;
+  margin: 24px auto 48px;
 }
 .destinationImageContainer {
   margin-bottom: 100px;
@@ -256,6 +265,9 @@ select,
 }
 .chooseHeader {
   text-align: center;
+}
+.chooseHeader p{
+margin-top: 16px;
 }
 .chooseBoxIcon {
   height: 64px;
@@ -384,7 +396,7 @@ footer {
   text-align: center;
   padding-top: 110px;
   padding-bottom: 50px;
-  border-bottom: 1px solid #1313181A;
+  border-bottom: 1px solid #1313181a;
 }
 .footerLogoText {
   display: flex;
@@ -402,17 +414,229 @@ footer {
 .footerContent p {
   margin-top: 16px;
   margin-bottom: 32px;
+  width: 750px;
 }
-.footerIcons{
+.footerIcons {
   display: flex;
   font-size: 28px;
   gap: 32px;
 }
-.footerIcons a{
+.footerIcons a {
   color: #131318;
 }
-.footerRights{
+.footerRights {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 110px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .defaultTilte {
+    font-size: 20px;
+  }
+  .defaultPara {
+    font-size: 14px;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menuBar {
+    display: block;
+  }
+  .headerBanner {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .defaultContainer {
+    width: 90vw;
+  }
+  .headerInner {
+    width: 70vw;
+  }
+  .headerForm {
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+  .headerBanner img {
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+  }
+  .headerInner h1 {
+    font-size: 22px;
+  }
+  .headerInner p {
+    width: auto;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+  }
+  .headerInner a {
+    width: 100%;
+  }
+  nav {
+    padding: 3vh 0;
+  }
+  .logoImg {
+    height: 28px;
+    width: 33px;
+  }
+  .logo h2 {
+    font-size: 22px;
+  }
+  .headerInner p {
+    padding: 0;
+  }
+  .popularContainer {
+    flex-direction: column;
+    gap: 38px;
+  }
+  .popularContent {
+    width: auto;
+    height: auto;
+  }
+  .popularContent button {
+    position: relative;
+  }
+  .popularImg {
+    height: auto;
+    width: auto;
+  }
+  .popularContainer {
+    margin: 38px auto;
+  }
+  .destinationContent p {
+    margin: 18px auto;
+    width: auto;
+  }
+  .row1,
+  .row2,
+  .row3 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 200px);
+    height: 200px;
+  }
+  .chooseContainer {
+    margin-bottom: 38px;
+  }
+  .chooseBoxIcon {
+    height: 48px;
+    width: 48px;
+  }
+  .chooseBoxContainer1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .chooseBox {
+    height: auto;
+    width: 100%;
+    padding: 32px;
+  }
+  .newsletterContainer {
+    flex-direction: column;
+    margin-bottom: 38px;
+    gap: 16px;
+  }
+  .newsletterBox {
+    width: auto;
+    height: auto;
+    padding: 24px;
+  }
+  .newsletterBox p {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.1);
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .newsletterImage {
+    border-radius: 16px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .newsletterImage img {
+    width: auto;
+    height: 100%;
+  }
+  .newsletterImageInner {
+    width: 214px;
+    height: 79px;
+    bottom: 30px;
+  }
+  .newsletterImageInner h2 {
+    font-size: 21px;
+  }
+  .newsletterImageInner p {
+    font-size: 15px;
+  }
+  .footerLogoText {
+    gap: 10px;
+  }
+  .footerLogo {
+    height: 28px;
+    width: 33px;
+  }
+  .footerText {
+    font-size: 22px;
+  }
+  .footerContent p {
+    margin: 16px auto;
+    width: 90vw;
+  }
+  .footerContent {
+    padding-top: 34px;
+    padding-bottom: 24px;
+  }
+  .footerIcons {
+    font-size: 22px;
+    gap: 28px;
+  }
+  .footerRights {
+    padding-top: 24px;
+    padding-bottom: 33px;
+  }
+  .chooseBoxContainer1 {
+    padding-top: 38px;
+  }
+  .newsletterImage img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1180px) and (min-width: 992px) {
+  .defaultContainer {
+    width: 992px;
+  }
+  .headerBanner {
+    width: 992px;
+  }
+  .row2 {
+    grid-template-columns: 320px 400px auto;
+  }
+  .row3 {
+    grid-template-columns: 420px auto;
+  }
+  .chooseBox {
+    width: 480px;
+  }
+  .newsletterImage {
+    width: 480px;
+  }
+  .newsletterImage img {
+    width: auto;
+    height: 100%;
+  }
+  .popularImg {
+    width: 480px;
+  }
+  .popularImg img {
+    width: auto;
+    height: 100%;
+  }
+  .popularContent {
+    width: 480px;
+  }
 }
