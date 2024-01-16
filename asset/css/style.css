@@ -1,6 +1,199 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+.defaultBtn {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  font-size: 20px;
+  font-weight: 800;
+}
+.defaultContainer {
+  width: 1170px;
+  margin: 0 auto;
+}
+.defaultTilte {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+}
+.defaultPara {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+/* HEADER CSS */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logoImg {
+  height: 48px;
+  width: 56px;
+}
+.logo h2 {
+  color: #ff5400;
+  font-size: 36px;
+  font-weight: 800;
+  margin-left: 16px;
+}
+.logo h2 span {
+  color: #131318;
+}
+
+.menu ul {
+  display: flex;
+  gap: 44px;
+}
+.menu ul li a {
+  color: #424247;
+  font-size: 18px;
+  font-weight: 400;
+}
+.menu ul li:first-child a {
+  color: #ff5400;
+}
+.headerBanner {
+  height: 500px;
+  width: 1170px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.headerBanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+}
+.headerInner {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  width: 900px;
+}
+.headerInner h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+}
+.headerInner p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.headerForm {
+  display: grid;
+  grid-template-columns: repeat(4, 170px);
+  justify-content: center;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  width: 800px;
+  margin: 0 auto;
+}
+.bannerField {
+  height: 50px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.bannerField i {
+  margin-right: 8px;
+}
+.bannerField:focus {
+  border: none;
+}
+select,
+.bannerField::placeholder {
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.headerForm a {
+  font-size: 16px;
+  font-weight: 700;
+}
+/* POPULAR CSS */
+.popularContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.popularContent {
+  width: 580px;
+  height: 550px;
+  position: relative;
+}
+.popularContent ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+.popularContent p {
+  margin: 24px 0;
+}
+.popularContent ul li {
+  margin: 16px 0;
+}
+.popularImg {
+  width: 540px;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.popularContent button{
+  position: absolute;
+  bottom: 0;
+}
+/* DESTINATION CSS */
